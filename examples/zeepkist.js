@@ -15,8 +15,8 @@ let worker = createWorker({
 
 worker.load().then(() => worker.loadLanguage("eng").then(() => worker.initialize("eng").then(() => ocrReady = true)));
 
-var wiimote = new bluetoothMote(HID.devices().filter(x => x.serialNumber === "001cbee76ec5")[0].path); // actual wiimote
-//var wiimote = new bluetoothMote(HID.devices().filter(x => x.serialNumber === "0023cc40ec2a")[0].path); // bal board
+var wiimote = new bluetoothMote(HID.devices().filter(x => x.serialNumber === "")[0].path); // actual wiimote
+//var wiimote = new bluetoothMote(HID.devices().filter(x => x.serialNumber === "")[0].path); // bal board
 
 const keys = {
     up: false,
